@@ -16,11 +16,8 @@ function beans_child_enqueue_assets() {
 add_filter( 'beans_post_meta_items', 'beans_child_remove_post_meta_items' );
 
 function beans_child_remove_post_meta_items( $items ) {
-
     unset( $items['author'] );
-
     return $items;
-
 }
 
 // Modify left footer text
