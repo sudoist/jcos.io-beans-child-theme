@@ -4,7 +4,7 @@ Description: Personal site Child Theme for the Beans Theme.
 Author: John Cosio
 Author URI: http://jcos.io
 Template: tm-beans
-Version: 1.1.4
+Version: 1.1.5
 Text Domain: tm-beans
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,13 +14,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 html {
     color: #ccc;
     font: 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-body.custom-background {
-    background-attachment: fixed;
-    background-image: url("http://localhost/www/jcos.io/wp-content/uploads/2016/08/sudobg1.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
 }
 
 a, .uk-link {
@@ -242,4 +235,21 @@ footer .menu li a{
     background-color: #b99128;
     color: #fff;
 	transition: all 0.5s ease 0s;
+}
+
+/* mobile */
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("http://jcos.io/meta/wp-content/uploads/2016/08/background.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
