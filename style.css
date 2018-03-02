@@ -4,7 +4,7 @@ Description: Personal site Child Theme for the Beans Theme.
 Author: John Cosio
 Author URI: http://jcos.io
 Template: tm-beans
-Version: 2.0.0
+Version: 2.0.1
 Text Domain: tm-beans
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*
  * Background pattern from Subtle Patterns
  * https://www.toptal.com/designers/subtlepatterns/black-paper/
- * Thanks Atle Mo(http://atle.co/)!
+ * Thanks Atle Mo(http://atle.co/)
  */
 
 /* general */
@@ -354,6 +354,12 @@ footer .menu li a {
 
 @media only screen and (max-width: 840px) {
 
+    ul.uk-subnav.home-icons {
+        float: none;
+        margin: 0 auto;
+        display: table;
+    }
+
     footer.tm-footer .uk-align-medium-left,
     footer.tm-footer .uk-margin-bottom-remove {
         text-align: center;
@@ -370,6 +376,14 @@ footer .menu li a {
 
     .tm-widget.uk-panel {
         text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 840px) and (orientation: landscape) {
+
+    html.home {
+        background-position: bottom;
     }
 
 }
