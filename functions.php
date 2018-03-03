@@ -17,7 +17,7 @@ add_filter('language_attributes', 'add_home_html_class');
 
 function add_home_html_class($output) {
 
-    if (is_page('home')) {
+    if ( is_page('home') || is_front_page() || is_home() ) {
         return $output . ' class="home"';
     }
 
