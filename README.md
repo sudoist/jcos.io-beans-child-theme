@@ -9,7 +9,12 @@ Built with <a href="https://www.getbeans.io/">Beans</a> WordPress theme.
 - Extract and upload to WordPress theme folder or use the add new theme from dashboard
 
 ### Notes
-- Home and about pages have html changes added directly using page text editor
+- Home about pages have html changes added directly using page text editor
+- Work page is a custom page template
+- Updated coding style
+    - Break down params
+    - Add actions or filters first before functions
+    - Reduced spacing
 
 ---
 Feel free to contact me for questions and suggestions
